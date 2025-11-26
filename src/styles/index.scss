@@ -5,6 +5,7 @@
   --card-gap-x: 48px;
   --card-gap-y: 46px;
   --card-width: 200px;
+  --gray-text: #616070;
 }
 *,
 *::before,
@@ -91,7 +92,7 @@ body {
 
 .card {
   font-family: Roboto, sans-serif;
-  width: 200px;
+  width: var(--card-width);
   display: flex;
   flex-direction: column;
   padding: 32px 19px 16px;
@@ -131,7 +132,7 @@ body {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 10px;
-  color: #616070;
+  color: var(--gray-text);
   align-self: flex-start;
 }
 
@@ -168,7 +169,7 @@ body {
 }
 
 .card__price-label {
-  color: #616070;
+  color: var(--gray-text);
   font-weight: 400;
   font-size: 12px;
 }
