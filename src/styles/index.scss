@@ -2,8 +2,9 @@
   --blue-color: #00acdc;
   --nav-color: #060b35;
   --hover-title-color: #34568b;
-  --card-gap-x: 46px;
-  --card-gap-y: 48px;
+  --card-gap-x: 48px;
+  --card-gap-y: 46px;
+  --card-width: 200px;
 }
 *,
 *::before,
@@ -57,7 +58,7 @@ body {
   }
 }
 
-.nav-item--active .nav-link {
+.nav-item--active.is-active {
   color: var(--blue-color);
   &::after {
     content: '';
@@ -78,13 +79,13 @@ body {
   justify-content: center;
   gap: var(--card-gap-y) var(--card-gap-x);
   @media (min-width: 488px) {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, var(--card-width));
   }
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, var(--card-width));
   }
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, var(--card-width));
   }
 }
 
